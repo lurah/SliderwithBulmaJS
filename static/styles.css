@@ -1,0 +1,50 @@
+/* General styles for the range input */
+.custom-range {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    appearance: none;
+    width: 200px; /* Set the width of the range input */
+    height: 8px; /* Set the height of the track */
+    background: transparent;
+    outline: solid var(--bulma-primary); /* Remove focus outline */
+    border-radius: 5px; /* Rounded corners for the track */
+  }
+  
+  /* Styling the track in WebKit browsers */
+  .custom-range::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  /* Styling the track in Firefox */
+  .custom-range::-moz-range-track {
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Styling the thumb in WebKit browsers */
+  .custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    position: relative;
+    top: 2px;
+    width: 14px; /* Width of the thumb */
+    height: 14px; /* Height of the thumb */
+    background: var(--bulma-primary);
+    outline: solid var(--bulma-primary-dark-invert);
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: -5px; /* Center the thumb vertically */
+  }
+  
+  /* Styling the thumb in Firefox */
+  .custom-range::-moz-range-thumb {
+    appearance: none;
+    position: relative;
+    top: 2px;
+    width: 14px; /* Width of the thumb */
+    height: 14px; /* Height of the thumb */
+    background: var(--bulma-primary);
+    outline: solid var(--bulma-primary-dark-invert);
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
