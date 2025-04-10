@@ -1,24 +1,27 @@
 /* General styles for the range input */
 .custom-range {
     -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: none;
     appearance: none;
     width: 200px; /* Set the width of the range input */
-    height: 8px; /* Set the height of the track */
+    height: 9px;
+    border-radius: 5px;
     background: transparent;
-    outline: solid var(--bulma-primary); /* Remove focus outline */
-    border-radius: 5px; /* Rounded corners for the track */
+    outline: none; /* Remove focus outline */    
   }
   
   /* Styling the track in WebKit browsers */
   .custom-range::-webkit-slider-runnable-track {
-    height: 8px;
-    border-radius: 5px;
+    height: 8px; /* Set the height of the track */
+    outline: solid var(--bulma-primary);
+    border-radius: 5px; /* Rounded corners for the track */
   }
   
   /* Styling the track in Firefox */
   .custom-range::-moz-range-track {
-    height: 10px;
-    border-radius: 5px;
+    height: 9px; /* Set the height of the track */
+    border: 2px solid var(--bulma-primary);
+    border-radius: 8px; /* Rounded corners for the track */
   }
   
   /* Styling the thumb in WebKit browsers */
@@ -26,25 +29,23 @@
     -webkit-appearance: none; /* Remove default styling */
     appearance: none;
     position: relative;
-    top: 2px;
+    top: -3px;
     width: 14px; /* Width of the thumb */
     height: 14px; /* Height of the thumb */
     background: var(--bulma-primary);
     outline: solid var(--bulma-primary-dark-invert);
     border-radius: 50%; /* Circular shape */
-    cursor: pointer; /* Pointer cursor on hover */
-    margin-top: -5px; /* Center the thumb vertically */
+    cursor: pointer; /* Pointer cursor on hover */    
   }
   
   /* Styling the thumb in Firefox */
   .custom-range::-moz-range-thumb {
+    -moz-appearance: none;
     appearance: none;
-    position: relative;
-    top: 2px;
     width: 14px; /* Width of the thumb */
     height: 14px; /* Height of the thumb */
     background: var(--bulma-primary);
-    outline: solid var(--bulma-primary-dark-invert);
+    border: 2px solid var(--bulma-primary-dark-invert);
     border-radius: 50%; /* Circular shape */
     cursor: pointer; /* Pointer cursor on hover */
   }
