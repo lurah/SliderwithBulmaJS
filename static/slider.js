@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
         angmaks.innerHTML = value;
 
     // Update the background gradient dynamically
-        rangeInput.style.background = `linear-gradient(to right, hsl(171, 100%, 41%) 0%,
-                                       hsl(171, 100%, 41%) ${percentage}%,
-                                       #fff ${percentage}%, #fff 100%)`;
+        rangeInput.style.background = `linear-gradient(to right, var(--bulma-success) 0%,
+                                       var(--bulma-success) ${percentage}%,
+                                       transparent ${percentage}%, transparent 100%)`; 
     };
 
     // Attach event listeners

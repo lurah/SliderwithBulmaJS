@@ -13,14 +13,14 @@
   /* Styling the track in WebKit browsers */
   .custom-range::-webkit-slider-runnable-track {
     height: 8px; /* Set the height of the track */
-    outline: solid var(--bulma-primary);
+    outline: solid var(--bulma-success);
     border-radius: 5px; /* Rounded corners for the track */
   }
   
   /* Styling the track in Firefox */
   .custom-range::-moz-range-track {
     height: 9px; /* Set the height of the track */
-    border: 2px solid var(--bulma-primary);
+    border: 2px solid var(--bulma-success);
     border-radius: 8px; /* Rounded corners for the track */
   }
   
@@ -32,7 +32,7 @@
     top: -3px;
     width: 14px; /* Width of the thumb */
     height: 14px; /* Height of the thumb */
-    background: var(--bulma-primary);
+    background: var(--bulma-success);
     outline: solid var(--bulma-primary-dark-invert);
     border-radius: 50%; /* Circular shape */
     cursor: pointer; /* Pointer cursor on hover */    
@@ -44,7 +44,7 @@
     appearance: none;
     width: 14px; /* Width of the thumb */
     height: 14px; /* Height of the thumb */
-    background: var(--bulma-primary);
+    background: var(--bulma-success);
     border: 2px solid var(--bulma-primary-dark-invert);
     border-radius: 50%; /* Circular shape */
     cursor: pointer; /* Pointer cursor on hover */
